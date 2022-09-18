@@ -1,0 +1,19 @@
+.header .subhead{
+    color: grey;
+}
+.nav-link {
+    background-color: cornflowerblue;
+    color: white;
+}
+.nav-link:hover {
+    background-color: white;
+    color: cornflowerblue;
+}
+.content-heading {
+    text-align: right;
+    color: cornflowerblue;
+    font-style: italic;
+}
+.main_page {
+    background-color: rgb(202, 202, 202);
+}
