@@ -15,32 +15,115 @@
                         <img src="./assets/img/headshot.jpeg" alt="Matthew Delgado Headshot" style="width: 120px;">
                     </div>
                     <div class="col">
-                        <h2>ECE 3553 - Multifarious Systems 1</h2>
-                        <h3 class="subhead">Fall 2022</h3>
-                        <a href="https://www.linkedin.com/in/matthewdelgado2000"><h3>Matthew Delgado</h3></a>
+                        <hgroup>
+                            <h2>ECE 3553 - Multifarious Systems 1</h2>
+                            <h3 class="subhead">Fall 2022</h3>
+                            <a href="https://www.linkedin.com/in/matthewdelgado2000"><h3>Matthew Delgado</h3></a>
+                        </hgroup>
                     </div>
                 </div>
             </div>
+            <hr>
             <!-- Navbar -->
             <nav class="nav nav-fill">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link home-button" href="index.html">Home</a>
                     </li>&nbsp;
                     <li class="nav-item">
-                        <a class="nav-link" href="lab1_registration.html">Lab 1</a>
+                        <a class="nav-link lab1-button" href="lab1_registration.html">Lab 1</a>
                     </li>&nbsp;
                     <li class="nav-item"> 
-                        <a class="nav-link" href="lab2_shopping.html">Lab 2</a>
+                        <a class="nav-link lab2-button" href="lab2_shopping.html">Lab 2</a>
                     </li>&nbsp;
                 </ul>
             </nav>
             <div class="content-heading">
-                <h3>Home</h3>
+                <h3>Lab 1</h3>
             </div>
             <!-- Main Page -->
-            <div class="main_page" id="content">
-                <h3 style="text-align: center;">Welcome to Matthew's Homepage!</h3>
+            <div class="main_page" id="content" style="background-color: turquoise;">
+                <div class="container">
+                    <br>
+                    <h3>Registration Form</h3>
+                    <br>
+                    <!-- Feedback Form -->
+                    <form action="lab1_result.html">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="first_name"><strong>First Name</strong></label>
+                                <input class="form-control" type="text" id="first_name" name="first_name" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="last_name"><strong>Last Name</strong></label>
+                                <input class="form-control" type="text" id="last_name" name="last_name" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="password"><strong>Password</strong></label>
+                                <input class="form-control" type="password" id="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="password"><strong>Date of Birth</strong></label>
+                                <input class="form-control" type="date" id="dob" name="dob" placeholder="MM/DD/YYYY">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="email"><strong>Email Address</strong></label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="email@domain.edu">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="email"><strong>Favorite Color</strong></label>
+                                <input class="form-control" type="text" id="fav_color" name="fav_color">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="coll_url"><strong>College URL</strong></label>
+                                <input class="form-control" type="text" id="coll_url" name="coll_url">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="coll_zip"><strong>College Zip Code</strong></label>
+                                <input class="form-control" type="text" id="coll_zip" name="coll_zip">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="coll_tele"><strong>College Telephone</strong></label>
+                                <input class="form-control" type="number" id="coll_tele" name="coll_tele" placeholder="(XXX) XXX-XXXX">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="lab_day"><strong>Day of Lab</strong></label>
+                                <input class="form-control" type="text" id="lab_day" name="lab_day">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Gender</strong></label>
+                            <input type="radio" id="male" name="male" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="female" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                        <!-- Submit/Reset Buttons -->
+                        <div class="btn-toolbar">
+                            <button class="btn btn-primary" type="submit" value="Submit">Submit</button>&nbsp;
+                            <button class="btn btn-outline-secondary" type="button" value="Clear">Clear</button>
+                        </div>           
+                    </form>
+                    <br>
+                </div>
             </div>
         </div>
     </body>

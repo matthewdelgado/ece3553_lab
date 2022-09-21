@@ -15,5 +15,24 @@
     font-style: italic;
 }
 .main_page {
+    justify-content: center;
     background-color: rgb(202, 202, 202);
+    width: 1000px;
+    min-height: 700px;
+}
+.content-heading {
+    width: 1000px;
+}
+.container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+table {
+    text-align: center;
+}
+.home-button {
+    background-color: #00ba8b;
+}
+.lab1-button, .lab2-button {
+    background-color: #008CBA;
 }

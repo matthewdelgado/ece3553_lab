@@ -15,32 +15,135 @@
                         <img src="./assets/img/headshot.jpeg" alt="Matthew Delgado Headshot" style="width: 120px;">
                     </div>
                     <div class="col">
-                        <h2>ECE 3553 - Multifarious Systems 1</h2>
-                        <h3 class="subhead">Fall 2022</h3>
-                        <a href="https://www.linkedin.com/in/matthewdelgado2000"><h3>Matthew Delgado</h3></a>
+                        <hgroup>
+                            <h2>ECE 3553 - Multifarious Systems 1</h2>
+                            <h3 class="subhead">Fall 2022</h3>
+                            <a href="https://www.linkedin.com/in/matthewdelgado2000"><h3>Matthew Delgado</h3></a>
+                        </hgroup>
                     </div>
                 </div>
             </div>
+            <hr>
             <!-- Navbar -->
             <nav class="nav nav-fill">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link home-button" href="index.html">Home</a>
                     </li>&nbsp;
                     <li class="nav-item">
-                        <a class="nav-link" href="lab1_registration.html">Lab 1</a>
+                        <a class="nav-link lab1-button" href="lab1_registration.html">Lab 1</a>
                     </li>&nbsp;
                     <li class="nav-item"> 
-                        <a class="nav-link" href="lab2_shopping.html">Lab 2</a>
+                        <a class="nav-link lab2-button" href="lab2_shopping.html">Lab 2</a>
                     </li>&nbsp;
                 </ul>
             </nav>
             <div class="content-heading">
-                <h3>Home</h3>
+                <h3>Lab 2</h3>
             </div>
             <!-- Main Page -->
-            <div class="main_page" id="content">
-                <h3 style="text-align: center;">Welcome to Matthew's Homepage!</h3>
+            <div class="main_page" id="content" style="background-color: turquoise;">
+                <br>
+                <h3 style="text-align: center;">Shopping Order Form</h3>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Super Sales Bay</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Picture</th> 
+                                    <th>Price</th>
+                                    <th>Add Item</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Apple iPad Air 2</td>
+                                    <td></td> 
+                                    <td>$353.99</td>
+                                    <td>
+                                        <input class="form-check-input" type="checkbox" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Apple iPad Air </td>
+                                    <td></td> 
+                                    <td>$299.99</td>
+                                    <td>
+                                        <input class="form-check-input" type="checkbox" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Samsung Galaxy S7</td>
+                                    <td></td> 
+                                    <td>$599.99</td>
+                                    <td>
+                                        <input class="form-check-input" type="checkbox" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Samsung Gear VR</td>
+                                    <td></td> 
+                                    <td>$59.99</td>
+                                    <td>
+                                        <input class="form-check-input" type="checkbox" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ASUS ZenBook UX303UB</td>
+                                    <td></td> 
+                                    <td>$1,169.99</td>
+                                    <td>
+                                        <input class="form-check-input" type="checkbox" value="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Shipping Address</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <form>
+                            <div class="form-row">
+                                <label for="name"><strong>Name</strong></label>
+                                <input class="form-control" type="text" name="name" placeholder="Name">
+                            </div><br>
+                            <div class="form-row">
+                                <label for="address"><strong>Address</strong></label>
+                                <textarea class="form-control" type="text" rows="4"></textarea>
+                            </div><br>
+                            <div class="form-row">
+                                <label for="email"><strong>Email</strong></label>
+                                <input class="form-control" type="text" name="email" placeholder="Email">
+                            </div><br>
+                            <div class="form-row">
+                                <label for="ship_method"><strong>Shipping Method</strong></label>
+                                <select class="custom-select">
+                                    <option>USPS Standard $3.00</option>
+                                    <option>USPS Overnight $300.00</option>
+                                </select>
+                            </div>
+                        </form><br>
+                        <form action="lab2_result.html">
+                            <div class="btn-toolbar">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                &nbsp;
+                                <button type="reset" class="btn btn-outline-primary">Clear</button>
+                            </div>
+                        </table><br>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
