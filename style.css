@@ -20,6 +20,9 @@
     width: 1000px;
     min-height: 700px;
 }
+.main-content {
+    min-height: 470px;
+}
 .content-heading {
     width: 1000px;
 }
