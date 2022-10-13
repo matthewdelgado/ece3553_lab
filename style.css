@@ -20,6 +20,9 @@
     width: 1000px;
     min-height: 700px;
 }
+.gpa-calc-bkg {
+    background-color: #cceeff;
+}
 .main-content {
     min-height: 470px;
 }
@@ -38,4 +41,7 @@ table {
 }
 .lab1-button, .lab2-button {
     background-color: #008CBA;
+}
+input {
+    width: 100%;
 }

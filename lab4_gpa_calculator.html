@@ -4,21 +4,163 @@
         <title>GPA Calculator</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css"/>
+        <script>
+            function myFunction() {
+                var calcCredit = document.getElementById('calc-credit').value;
+                var calcScore = document.getElementById('calc-score').value;
+                var scores = {
+                    Distinction: 5,
+                    A: 4, B: 3, C: 2, D: 1, F: 0
+                };
+                    var subjects = [
+                    "Subject A", "Subject B", "Subject C", "Subject D"
+                ];
+                var gpacalc = () => {
+                let all = document.querySelectorAll("#gpa-wrap select"),
+                    score = 0;
+                for (let i of all) {
+                    // Use parseFloat if decimals are involved.
+                    score += parseInt(i.value);
+                }
+                document.getElementById("gpa-total").innerHTML = score;
+                document.getElementById("gpa-average").innerHTML = score / all.length;
+                };
+                document.getElementById("gpa-average").innerHTML = Math.random() * (4.0 - 2.5) + 2.5;
+            }
+        </script>
     </head>
     <body>
         <!-- Main Container -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h3>GPA Calculator</h3>
+            <!-- Header -->
+            <div class="header">
+                <div class="row">
+                    <div class="col col-sm-auto">
+                        <img src="./my_image/headshot.jpeg" alt="Matthew Delgado Headshot" style="width: 120px;">
+                    </div>
+                    <div class="col">
+                        <hgroup>
+                            <h2>ECE 3553 - Multifarious Systems 1</h2>
+                            <h3 class="subhead">Fall 2022</h3>
+                            <a href="https://www.linkedin.com/in/matthewdelgado2000"><h3>Matthew Delgado</h3></a>
+                        </hgroup>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="table">
-                        <th></th>
-                        <th>Credit</th>
-                        <th>Score</th>
+            <hr>
+            <!-- Navbar -->
+            <nav class="nav nav-fill">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link home-button" href="index.html">Home</a>
+                    </li>&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link lab1-button" href="lab1_registration.html">Lab 1</a>
+                    </li>&nbsp;
+                    <li class="nav-item"> 
+                        <a class="nav-link lab2-button" href="lab2_shopping.html">Lab 2</a>
+                    </li>&nbsp;
+                    <li class="nav-item"> 
+                        <a class="nav-link lab4-button" href="lab4_gpa_calculator.html">GPA Calculator</a>
+                    </li>&nbsp;
+                </ul>
+            </nav>
+            <div class="content-heading">
+                <h3>GPA Calculator</h3>
+            </div>
+            <!-- Main Container -->
+            <div class="main_page" id="content" style="background-color: #cceeff;">
+                <br><h3 style="text-align: center;">GPA Calculator</h3><br>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><strong>Credit</strong></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: center;"><strong>Score</strong></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <form name="myform" >
+                            <!-- Calculus 1 -->
+                            <div class="form-row">
+                                <div class="col-md-2 my-auto">
+                                    <label for="calc-credit">Calculus 1</label>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="number" name="calc-credit" required>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="text" id="calc-score" required>
+                                </div>
+                            </div>
+                            <!-- Physics 1 -->
+                            <div class="form-row">
+                                <div class="col-md-2 my-auto">
+                                    <label for="calc-credit">Physics 1</label>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="number" id="calc-credit" required>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="text" id="calc-score" required>
+                                </div>
+                            </div>
+                            <!-- History -->
+                            <div class="form-row">
+                                <div class="col-md-2 my-auto">
+                                    <label for="calc-credit">History</label>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="number" id="calc-credit" required>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="text" id="calc-score" required>
+                                </div>
+                            </div>
+                            <!-- Chemistry 1 -->
+                            <div class="form-row">
+                                <div class="col-md-2 my-auto">
+                                    <label for="calc-credit">Chemistry 1</label>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="number" id="calc-credit" required>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="text" id="calc-score" required>
+                                </div>
+                            </div>
+                            <!-- Biology 2 -->
+                            <div class="form-row">
+                                <div class="col-md-2 my-auto">
+                                    <label for="calc-credit">Biology 2</label>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="number" id="calc-credit" required>
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <input type="text" id="calc-score" required>
+                                </div>
+                            </div><br>
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="col">
+                                        <span>GPA:</span><p id="gpa-average"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-7">
+                                    <div class="col">
+                                        <div class="btn-tollbar">
+                                            <button type="submit" onclick="myFunction()">Calculate GPA</button>
+                                            <button type="reset">Clear</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
