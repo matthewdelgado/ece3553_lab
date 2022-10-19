@@ -1,4 +1,4 @@
-# Lab 3
-1. Unzip "delgado_matthew.zip".
-2. Open "delgado_matthew" folder inside of IDE of choice.
+# Lab 5
+1. Unzip the corresponding lab .zip file.
+2. Open the unzipped folder inside of your IDE of choice. (Make sure to open the folder only including the source code.)
 3. Run and Debug using Google Chrome.
